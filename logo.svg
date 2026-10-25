@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <!-- Solid colors matching the specified palette -->
+    <style>
+      .bg { fill: #FFFFFF; }
+      .blue-dark { fill: #003380; }
+      .blue-main { fill: #0052CC; }
+      .orange-main { fill: #FF5630; }
+      .text-dark { fill: #172B4D; font-family: 'Montserrat', 'Arial Black', sans-serif; font-weight: 900; }
+      .text-orange { fill: #FF5630; font-family: 'Montserrat', 'Arial Black', sans-serif; font-weight: 900; }
+      .text-sub { fill: #6B778C; font-family: 'Arial', sans-serif; font-weight: 700; letter-spacing: 5px; }
+    </style>
+  </defs>
+
+  <!-- Pure White Background -->
+  <rect class="bg" width="100%" height="100%" />
+
+  <!-- Logo Mark: Layered Paper / Speed Wings -->
+  <g transform="translate(30, 40)">
+    <!-- Back Layer (Shadow Blue) -->
+    <path class="blue-dark" d="M20 30 L80 30 L60 110 L0 110 Z" opacity="0.5" />
+    
+    <!-- Middle Layer (Royal Blue Paper Sheet) -->
+    <path class="blue-main" d="M40 20 L100 20 L80 100 L20 100 Z" />
+    
+    <!-- Front Dynamic Motion Line / Express Arrow (Vibrant Orange) -->
+    <path class="orange-main" d="M60 10 L125 10 L85 50 L115 50 L55 120 L70 70 L45 70 Z" />
+  </g>
+
+  <!-- Modern Geometric Typography -->
+  <!-- "CEC" -->
+  <text x="180" y="105" class="text-dark" font-size="64" letter-spacing="1">CEC</text>
+  
+  <!-- "EXPRESS" -->
+  <text x="325" y="105" class="text-orange" font-size="64" letter-spacing="1">EXPRESS</text>
+  
+  <!-- Subtitle Tagline -->
+  <text x="183" y="138" class="text-sub" font-size="14">FAST PRINTING SOLUTIONS</text>
+</svg>
