@@ -1,14 +1,79 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CEC Express | Watch</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css"><script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-<link rel="stylesheet" href="home.css"><link rel="stylesheet" href="watch.css"></head><body>
-<header class="site-header"><div class="container nav-wrap">
-<a href="index.html" class="brand" aria-label="CEC Express home"><svg viewBox="0 0 390 100" role="img" aria-label="CEC Express logo"><polygon points="20,70 50,20 80,20 50,70" fill="#8ca8d8"/><polygon points="40,65 70,15 110,15 80,65" fill="#0052cc"/><polygon points="120,5 50,55 85,55 40,95 130,35 95,35" fill="#ff5630"/><text x="140" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="34" fill="#0052cc">CEC</text><text x="210" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="34" fill="#ff5630">Express</text></svg></a>
-<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" py-click="toggle_menu"><i class="fa-solid fa-bars"></i></button>
-<nav><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="watch.html">Watch</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
-<main><section class="watch-section"><div class="container"><div class="section-heading"><span class="eyebrow">Behind the print</span><h2>Watch CEC Express in Action</h2><p>See our latest advertisement and learn more about our services.</p></div><div class="video-shell" id="videoShell"><video id="promoVideo" controls preload="metadata" poster="docs.jfif"><source src="advertisement.mp4" type="video/mp4">Your browser does not support HTML video.</video><div class="video-placeholder" id="videoPlaceholder"><i class="fa-regular fa-circle-play"></i><h3>Your advertisement goes here</h3><p>Add your video as <code>assets/advertisement.mp4</code>.</p></div></div></div></section></main>
-<footer class="site-footer"><div class="container footer-inner"><a href="index.html" class="footer-brand">CEC <span>Express</span></a><p>© 2026 CEC Express. All rights reserved.</p><a href="index.html" class="back-top">Home ↑</a></div></footer>
-<script type="mpy" src="home.py"></script><script type="mpy" src="watch.py"></script></body></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CEC Express | Watch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PyScript CSS & Core -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+    <!-- Your Local Stylesheets -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="CEC Express home">
+                <svg viewBox="0 0 390 100" role="img" aria-label="CEC Express logo">
+                    <polygon points="20,70 50,20 80,20 50,70" fill="#8ca8d8"/>
+                    <polygon points="40,65 70,15 110,15 80,65" fill="#0052cc"/>
+                    <polygon points="120,5 50,55 85,55 40,95 130,35 95,35" fill="#ff5630"/>
+                    <text x="140" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="34" fill="#0052cc">CEC</text>
+                    <text x="210" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="34" fill="#ff5630">Express</text>
+                </svg>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" py-click="toggle_menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="watch.html">Watch</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="watch-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Behind the print</span>
+                    <h2>Watch CEC Express in Action</h2>
+                    <p>See our latest advertisement and learn more about our services.</p>
+                </div>
+                <div class="video-shell" id="videoShell">
+                    <video id="promoVideo" controls preload="metadata" poster="docs.jfif">
+                        <source src="advertisement.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <div class="video-placeholder" id="videoPlaceholder">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <h3>Your advertisement goes here</h3>
+                        <p>Add your video as <code>advertisement.mp4</code>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="index.html" class="footer-brand">CEC <span>Express</span></a>
+            <p>© 2026 CEC Express. All rights reserved.</p>
+            <a href="index.html" class="back-top">Home ↑</a>
+        </div>
+    </footer>
+
+    <!-- PyScript Python Scripts (Fixed type to "py") -->
+    <script type="py" src="home.py"></script>
+    <script type="py" src="watch.py"></script>
+</body>
+</html>
