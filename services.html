@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CEC Express | Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css"><script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+<link rel="stylesheet" href="home/home.css"><link rel="stylesheet" href="services/services.css"></head><body>
+<header class="site-header"><div class="container nav-wrap">
+<a href="index.html" class="brand" aria-label="CEC Express home"><svg viewBox="0 0 390 100" role="img" aria-label="CEC Express logo"><polygon points="20,70 50,20 80,20 50,70" fill="#8ca8d8"/><polygon points="40,65 70,15 110,15 80,65" fill="#0052cc"/><polygon points="120,5 50,55 85,55 40,95 130,35 95,35" fill="#ff5630"/><text x="140" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="34" fill="#0052cc">CEC</text><text x="210" y="52" font-family="Poppins,sans-serif" font-weight="700" font-size="34" fill="#ff5630">Express</text></svg></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" py-click="toggle_menu"><i class="fa-solid fa-bars"></i></button>
+<nav><ul class="nav-links" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="watch.html">Watch</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+<main><section class="services-section"><div class="container"><div class="section-heading"><span class="eyebrow">What we do</span><h2>Printing Services</h2><p>Custom printing solutions for your personal, school and business needs.</p></div>
+<div class="service-tools"><label class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input id="serviceSearch" type="search" placeholder="Find a service..." aria-label="Search services" py-input="filter_services"></label><span id="serviceCount" class="service-count" aria-live="polite">4 services</span></div>
+<div class="services-grid" id="servicesGrid">
+<article class="service-card" data-search="document printing black white color paper"><div class="service-icon"><i class="fa-solid fa-file-lines"></i></div><h3>Document Printing</h3><p>High-volume black-and-white and full-color documents with sharp, clear output.</p><span class="service-tag">Documents</span></article>
+<article class="service-card" data-search="business cards premium paper design"><div class="service-icon"><i class="fa-solid fa-address-card"></i></div><h3>Business Cards</h3><p>Make a lasting impression with professional designs and quality paper finishes.</p><span class="service-tag">Business</span></article>
+<article class="service-card" data-search="banners signs posters vinyl events marketing"><div class="service-icon"><i class="fa-solid fa-scroll"></i></div><h3>Banners &amp; Signs</h3><p>Durable banners, posters and signage for events, promotions and marketing.</p><span class="service-tag">Large format</span></article>
+<article class="service-card" data-search="custom apparel shirts uniforms screen heat transfer"><div class="service-icon"><i class="fa-solid fa-shirt"></i></div><h3>Custom Apparel</h3><p>Custom shirt and uniform printing for teams, organizations and businesses.</p><span class="service-tag">Apparel</span></article></div><p id="noServices" class="empty-state" hidden>No matching services. Try another search.</p></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><a href="index.html" class="footer-brand">CEC <span>Express</span></a><p>© 2026 CEC Express. All rights reserved.</p><a href="index.html" class="back-top">Home ↑</a></div></footer>
+<script type="mpy" src="home/home.py"></script><script type="mpy" src="services/services.py"></script></body></html>
